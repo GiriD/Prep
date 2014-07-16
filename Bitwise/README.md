@@ -6,6 +6,8 @@ Question1: Compare 2 integers without using comparision operators.
 
 	1. Using Switch:
 		a^~b if == -1 then equal
-		
+
 	2. Using Arithmetic expection:
-		divide by (a-b) if throws Arithmetic exception then equal  
+		divide by (a-b) if throws Arithmetic exception then equal 
+
+	 CompareInt.java 
