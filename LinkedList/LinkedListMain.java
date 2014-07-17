@@ -13,5 +13,7 @@ class LinkedListMain
 		list.display();
 
 		list.insertBefore(100,34);
+		list.delete(7);	
+		list.display();	
 	}
 }

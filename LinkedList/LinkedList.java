@@ -109,4 +109,29 @@ class LinkedList
 		System.out.println();
 	}
 
+	void delete(int data)
+	{
+		Node current = first;
+		Node previous = null;
+		while(current!=null)
+		{
+			if(current.getData() == data)
+				break;
+
+			previous = current;
+			current = current.next;
+		}
+		if(current == null)
+		{
+			System.out.println("Node not found.");
+		}
+		else if(current == first)
+		{
+			first = first.next;
+		}
+		else
+		{
+			previous.next = current.next;
+		}
+	}
 }
