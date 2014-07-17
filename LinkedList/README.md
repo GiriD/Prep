@@ -15,7 +15,7 @@ Question1: Insert in a Singly Linked List (SLL)
 	4. Insert Before
 		insert before a key. Use previous pointer here. Boundry condition: insert before first node.
 
-	 Node.java, LinkedList.java and LinkedListMain.java
+	Node.java, LinkedList.java and LinkedListMain.java
 
 Question2: Delete a node in Singly Linked List (SLL)
 
