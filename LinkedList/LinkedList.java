@@ -134,4 +134,106 @@ class LinkedList
 			previous.next = current.next;
 		}
 	}
+
+	Node mtolast(int m)
+	{
+		Node slow, fast;
+		slow=fast=first;
+
+		for(int i=m;i>1;i--)
+		{
+			if(fast!=null)
+			{
+				fast=fast.next;
+			}
+			else
+			{
+				return null;
+			}
+		}
+
+		while(fast.next!=null)
+		{
+			slow=slow.next;
+			fast = fast.next;
+		}
+		return slow;
+	}
+
+	void createCycle()
+	{
+		Node n1 = new Node(10);
+		Node n2 = new Node(20);
+		Node n3 =  new Node(30);
+		n1.next = n2;
+		n2.next = n3;
+		n3.next = n2;
+		first = n1;
+		//display();
+	}
+
+	boolean isCycle()
+	{
+		Node slow,fast;
+		slow=fast=first;
+
+		while(fast!=null && fast.next!=null)
+		{
+			slow = slow.next;
+			fast = fast.next.next;
+			if(slow == fast)
+				return true;
+		}
+		return false;
+	}
+
+	int lengthofcycle()
+	{
+		Node slow,fast;
+		slow=fast=first;
+
+		while(fast!=null && fast.next!=null)
+		{
+			slow = slow.next;
+			fast = fast.next.next;
+			if(slow == fast)
+			{
+				int count = 1;
+				slow= slow.next;
+				fast = fast.next.next;
+				while(slow != fast)
+				{
+					slow= slow.next;
+					fast = fast.next.next;
+					count++;					
+				}
+				return count;
+
+			}
+		}
+		return 0;
+	}
+
+	Node returnStart()
+	{
+		Node slow,fast;
+		slow=fast=first;
+
+		while(fast!=null && fast.next!=null)
+		{
+			slow = slow.next;
+			fast = fast.next.next;
+			if(slow == fast)
+			{
+				fast = first;
+				while(slow != fast)
+				{
+					slow = slow.next;
+					fast = fast.next;
+				}
+				return slow;
+			}
+		}
+		return null;
+	}
 }
