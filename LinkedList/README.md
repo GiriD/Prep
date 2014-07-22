@@ -31,7 +31,8 @@ Question3: Find m to the last element in a SLL
 
 Question4: Flattening a linked list.
 
-	 The SLL is flattened by pointing the child of a node at the end of the list and changing the tail pointer correspondingly. 
+	 The SLL is flattened by pointing the child of a node at the end of the list and changing the tail 
+	 pointer correspondingly. 
 
 	In FlattenList folder.
 
