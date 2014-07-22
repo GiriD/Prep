@@ -26,14 +26,17 @@ Question2: Delete a node in Singly Linked List (SLL)
 	Node.java, LinkedList.java and LinkedListMain.java
 
 Question3: Find m to the last element in a SLL
+
 	 Use slow and fast pointer method. Check for boundary condition that # of elements greater than m.
 
 Question4: Flattening a linked list.
+
 	 The SLL is flattened by pointing the child of a node at the end of the list and changing the tail pointer correspondingly. 
 
 	In FlattenList folder.
 
 Question5: Cycle
+
 	 1. Find whether there is a cycle in a SLL
 	 	 Use slow and fast pointer for this.
 
