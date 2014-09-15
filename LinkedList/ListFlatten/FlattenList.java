@@ -55,6 +55,7 @@ class FlattenList
 		if(head == null)
 			return;
 
+		// Do while because while will not work for one node
 		do{
 			if(current.child !=null)
 			{
